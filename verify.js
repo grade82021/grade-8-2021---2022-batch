@@ -3,7 +3,7 @@ function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 var password = document.getElementById("password").value;
-if ( username == "sidharth.parmar" && password == "sidparmar8"||username == "kush.kundalia" && password == "rockeeee1"|| username=="dhyan.thakkar"&&password=="animeguy20000"||username == "tirth.khunt" && password == "tirthk01"||username == "vasu.rakholiya" && password=="vasur18"||username=="yuvraj.dadhaniya"&&password=="yuvrajd02"||username=="krish.kotadiya"&&password=="krishk10"){
+if ( username == "sidharth.parmar" && password == "sidparmar8"||username == "kush.kundalia" && password == "rockeeee1"|| username=="dhyan.thakkar"&&password=="animeguy2000"||username == "tirth.khunt" && password == "tirthk92"||username == "vasu.rakholiya" && password=="vasur18"||username=="yuvraj.dadhaniya"&&password=="yuvrajd02"||username=="krish.kotadiya"&&password=="krishk10"){
 alert ("Hello " + username + " Thanks for logging in, click on ok to continue");
 window.location = "addition-grade8-gibbonware-maintrue.html"; 
 return false;
