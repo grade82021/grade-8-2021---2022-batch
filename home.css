@@ -21,7 +21,7 @@ i{
     font-size: 30px;
 }
 a{
-    color: #FFFF00;
+    color: white;
     font-family: 'Quattrocento Sans', sans-serif; 
     font-size: larger; 
 }
@@ -32,7 +32,7 @@ a:hover{
 }
 h1{
     font-family: 'Quattrocento Sans', sans-serif;
-    color:navy;
+    color:yellow;
     text-decoration-style: dotted;
 }
 .sym {
