@@ -1,3 +1,4 @@
+
 p{
     /* /* color:rgb(159, 38, 207);
     stroke: blue; */
@@ -31,6 +32,10 @@ a:hover{
   
 }
 h1{
+   @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+    font-family: 'Monoton', cursive;
+}
+h2{
     font-family: 'Quattrocento Sans', sans-serif;
     color:yellow;
     text-decoration-style: dotted;
