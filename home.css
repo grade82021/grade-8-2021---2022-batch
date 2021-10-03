@@ -25,11 +25,20 @@ a{
     color: white;
     font-family: 'Quattrocento Sans', sans-serif; 
     font-size: larger; 
+    text-decoration : none;
 }
 a:hover{
    color:rgb(18, 13, 66);
    font-family: 'Quattrocento Sans', sans-serif;  
-  
+  text-decoration : none;
+}
+
+a:link{
+text-decoration : none;
+}
+
+a:hover{
+text-decoration : none;
 }
 
 h1{
