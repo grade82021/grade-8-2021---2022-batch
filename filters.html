@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filter</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="home.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+#myUL li a:hover:not(.header) {
+  /* background-color: #eee; */
+  background-color: orange;
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+h2{
+padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: orange;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+</style>
+</head>
+<body>
+
+<h2>Filter By Topic</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for topics" title="Search">
+
+<ul id="myUL">
+  <li><a href="#">Science And Technology</a></li>
+  <li><a href="#">Blogs (English)</a></li>
+
+  <li><a href="#">Comics (Hindi)</a></li>
+  <li><a href="#">Mini Sagas (English)</a></li>
+
+  <li><a href="#">PPT</a></li>
+  <li><a href="#">Book Reviews</a></li>
+  <li><a href="#">Movie Reviews</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
