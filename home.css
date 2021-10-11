@@ -22,15 +22,18 @@ i{
     font-size: 30px;
 }
 a{
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Quattrocento Sans', sans-serif; 
     font-size: larger; 
-    text-decoration : none;
+    padding: 6px 15px;
+    border-radius:20px;
+    text-decoration: none;
 }
 a:hover{
    color:rgb(18, 13, 66);
    font-family: 'Quattrocento Sans', sans-serif;  
-  text-decoration : none;
+  background:whitesmoke;
+  color : black;
 }
 
 a:link{
