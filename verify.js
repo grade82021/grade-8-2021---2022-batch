@@ -24,3 +24,54 @@ return false;
 }
 }
 }
+function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var password = document.getElementById("password").value;
+    if (username=="admin.dhyan"&& password=="qwcvas12"){
+    prompt ("Hello Dhyan, Welcome to your management console for the website, Click on OK to continue");
+    window.location = "admin.html"; 
+    return false;
+    }
+    else{
+    attempt --;
+    alert("Please Re-Check Your Credentials");
+    
+    
+        
+     if( attempt == 0){
+    document.getElementById("username").disabled = true;
+    document.getElementById("password").disabled = true;
+    document.getElementById("submit").disabled = true;
+    alert ("Your login rights have been suspended");
+    
+    return false;
+    }
+    }
+    }
+
+    function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var password = document.getElementById("password").value;
+        if (username=="admin.kush"&& password=="rockeeee1"){
+        alert ("Hello Kush, Welcome to your management console for the website, Click on OK to continue");
+        window.location = "admin.html"; 
+        return false;
+        }
+        else{
+        attempt --;
+        alert("Please Re-Check Your Credentials");
+        
+        
+            
+         if( attempt == 0){
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("submit").disabled = true;
+        alert ("Your login rights have been suspended");
+        
+        return false;
+        }
+        }
+        }
