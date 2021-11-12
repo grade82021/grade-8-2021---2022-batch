@@ -86,8 +86,8 @@ input[type=submit] {
     <label>Name</label> <input id="Namebox" type="text"><hr>
     <label>School Email Id</label> <input id="mailbox" type="text"><hr>
     <label>Title</label> <input id="titlbox" type="text"><hr>
-    <label>Link (Google Docs Or Slides)</label> <input id="hlbox" type="text"><hr>
-    <label>Link To Cover Page (Optional)</label> <input id="cpbox" type="text"><hr>
+    <label>Link (Google Drive)</label> <input id="hlbox" type="text"><hr>
+    <label>Link To Cover Page (Only if you're uploading to feed")</label> <input id="cpbox" type="text"><hr>
     <label>Upload Time (Will Be Displayed Under Your Feed Post)</label> <input id="timebox" type="datetime-local"><hr>
     <label>Choose Section</label>
     <select id="PgSel">
@@ -136,8 +136,7 @@ input[type=submit] {
             })
 
             .then(()=>{
-                alert("Your Response Has Been Recorded You Will Get An E-mail Once Your Submission Is Live On The Website.");
-                alert("Thankyou For Supporting The Website")
+                alert("Thankyou For Supporting The Website, Your response has been recorded")
             })
             .catch((error)=>{
                 alert("unsuccessful, error encountered by server"+error)
